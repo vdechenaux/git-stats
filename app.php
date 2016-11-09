@@ -8,6 +8,6 @@ use Silly\Edition\PhpDi\Application;
 
 $app = new Application();
 
-$app->command('run [--graphite]', RunCommand::class);
+$app->command('run [--graphite] [--threads=]', RunCommand::class);
 
 $app->run();

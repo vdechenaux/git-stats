@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "94911929014ebb185363f922666ac03c",
-    "content-hash": "9d0fb7aa08bba617bf657bf9cc451ffd",
+    "hash": "273fcea2484fa6ae45c50a53009f6511",
+    "content-hash": "02099efab9af86c6c422d55e052d0422",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -33,6 +33,59 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "jubianchi/async-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jubianchi/async-generator.git",
+                "reference": "f6e19813aad8557b56a5a8618fec215d073c8eb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jubianchi/async-generator/zipball/f6e19813aad8557b56a5a8618fec215d073c8eb4",
+                "reference": "f6e19813aad8557b56a5a8618fec215d073c8eb4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0.3"
+            },
+            "require-dev": {
+                "atoum/atoum": "@stable",
+                "atoum/reports-extension": "@stable",
+                "couscous/couscous": "@stable",
+                "fabpot/php-cs-fixer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/loop/functions.php",
+                    "src/pipe/functions.php",
+                    "src/runtime/functions.php",
+                    "src/time/functions.php",
+                    "src/stream.php",
+                    "src/socket.php",
+                    "src/process.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jubianchi",
+                    "email": "contact@jubianchi.fr"
+                }
+            ],
+            "description": "An async generator runtime for PHP",
+            "keywords": [
+                "async",
+                "generator",
+                "runtime"
+            ],
+            "time": "2016-06-03 06:59:39"
         },
         {
             "name": "mnapoli/silly",
@@ -578,7 +631,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "jubianchi/async-generator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

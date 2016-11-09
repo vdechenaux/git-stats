@@ -28,4 +28,14 @@ class CommandRunner
     {
         return $this->run("cd \"$directory\" && $command");
     }
+
+    public function runAsync(string $command, callable $output) : \Generator
+    {
+        return \jubianchi\async\process\spawn($command.' 2>&1', $output);
+    }
+
+    public function runInDirectoryAsync(string $directory, string $command, callable $output) : \Generator
+    {
+        return $this->runAsync("cd \"$directory\" && $command", $output);
+    }
 }
